@@ -1,0 +1,21 @@
+.header{
+    width: 100%;
+    background: #212323;
+}
+
+ul{
+    margin: auto;
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+ul>li{
+    width: 120px;
+    padding: 10px 0;
+    color: #eee9e9;
+    flex: 120px;
+    text-align: center;
+}

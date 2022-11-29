@@ -1,0 +1,19 @@
+<div class="wrapper_converter">
+    <div class="exchangeRates">
+        <div class="inputBlock">
+            <input [value]="inp1" [formControl]="setInp1" (focus)="setLastFocus(1)" type="number">
+            <select [value]="select1" [formControl]="setSelect1">
+                <option *ngFor="let item of currencies"
+                        [value]="item.code">{{item.code}}</option>
+            </select>
+        </div>
+
+        <div class="inputBlock">
+            <input [value]="inp2" [formControl]="setInp2" (focus)="setLastFocus(2)" type="number">
+            <select [value]="select2" [formControl]="setSelect2">
+                <option *ngFor="let item of currencies"
+                        [value]="item.code">{{item.code}}</option>
+            </select>
+        </div>
+    </div>
+</div>
